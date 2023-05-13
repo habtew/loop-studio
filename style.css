@@ -18,3 +18,51 @@ img{
 ul{
     list-style-type: none;
 }
+
+main,
+footer{
+    display: none;
+}
+
+
+header{
+    background: url('./images/mobile/image-hero.jpg') no-repeat;
+    background-size: cover;
+    padding: 2em 1em;
+    background-color: black;
+    background-blend-mode: lighten;
+}
+
+nav{
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+nav .nav-icon{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+nav .logo{
+
+}
+
+nav .nav{
+    display: none;
+}
+
+
+
+.hero{
+    margin-block: 150px;
+    font-size: 40px;
+    padding: .5em;
+    line-height: .8;
+    border: 1px solid white;
+    letter-spacing: .2rem;
+    font-weight: lighter;
+    opacity: .9;
+}
