@@ -1,3 +1,4 @@
+const humberIcon = document.querySelector('.hamburger-icon')
 const mobileData = [
     {
         txt: 'Deep earth',
@@ -58,4 +59,8 @@ const desktopData = [
         img: ''
     },   
 ]
-console.log( mobileData)
+
+humberIcon.addEventListener('click', ()=>{
+    const elem = document.querySelector('nav .nav')
+    elem.style.display == 'none'? elem.style.display = 'flex': elem.style.display = 'none'
+})
