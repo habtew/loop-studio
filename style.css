@@ -7,8 +7,6 @@
 body{
     margin:0;
     padding: 0;
-    background:black;
-    color: white;
 }
 
 img{
@@ -24,7 +22,12 @@ footer{
     /* display: none; */
 }
 
+section{
+    padding: 2em;
+}
 
+
+/* header layout */
 header{
     background: url('./images/mobile/image-hero.jpg') no-repeat;
     background-size: cover;
@@ -52,7 +55,9 @@ nav .logo{
 }
 
 nav .nav{
+
     display: flex;
+    display: none;
     flex-direction: column;
     position: fixed;
     background: green;
@@ -81,8 +86,31 @@ nav .nav .nav-item{
     letter-spacing: .2rem;
     font-weight: lighter;
     opacity: .9;
+    color: white;
 }
 
 .none{
     display: none;
+}
+
+
+
+
+/* interactive section layout */
+
+.section-interactive{
+    margin-block: 100px;
+}
+
+.section-interactive-element{
+    text-align: center;
+}
+
+.interactive-title{
+    font-size: 2rem;
+}
+
+.interactive-par{
+ font-size: 1.2rem;
+ line-height: 1.3;   
 }
