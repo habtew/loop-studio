@@ -30,7 +30,7 @@ header{
     background-size: cover;
     padding: 2em 1em;
     background-color: black;
-    background-blend-mode: darken;
+    background-blend-mode: lighten;
 }
 
 nav{
@@ -43,6 +43,7 @@ nav .nav-icon{
     align-items: center;
     width: 100%;
     justify-content: space-between;
+    height: 5vh;
     
 }
 
@@ -56,14 +57,11 @@ nav .nav{
     position: fixed;
     background: green;
     width: 100%;
-    height: 91vh;
     left: 0;
     right: 0;
-    bottom: 0;
-    top: 0;
     z-index: 1;
     justify-content: center;
-    transition: ease-in cubic-bezier(0.075, 0.82, 0.165, 1);
+    height: 100vh;
 }
 
 nav .nav .nav-item{
