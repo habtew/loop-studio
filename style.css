@@ -114,3 +114,21 @@ nav .nav .nav-item{
  font-size: 1.2rem;
  line-height: 1.3;   
 }
+
+
+
+/* grid-items section layout */
+.grid-items{
+    position: relative;
+    margin-block: 20px;
+}
+
+.grid-items-text{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    bottom: 0;
+    max-width: 40px;
+    font-size: 1.5rem;
+    padding: 0em 1em
+}
