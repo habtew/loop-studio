@@ -118,9 +118,23 @@ nav .nav .nav-item{
 
 
 /* grid-items section layout */
+.grid-section{
+    display: grid;
+    grid-template-areas: 
+        "title"
+        "grid"
+        "btn";
+        align-content: center;
+}
+
+.grid--title{
+    grid-area: title;
+}
+
 .grid-items{
     position: relative;
     margin-block: 20px;
+    grid-area: grid;
 }
 
 .grid-items-text{
@@ -131,4 +145,8 @@ nav .nav .nav-item{
     max-width: 40px;
     font-size: 1.5rem;
     padding: 0em 1em
+}
+
+.grid--btn{
+    grid-area: btn;
 }
