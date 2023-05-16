@@ -99,7 +99,7 @@ nav .nav .nav-item{
 /* interactive section layout */
 
 .section-interactive{
-    margin-block: 100px;
+    margin: 100px 0px 0px;
 }
 
 .section-interactive-element{
@@ -119,16 +119,19 @@ nav .nav .nav-item{
 
 /* grid-items section layout */
 .grid-section{
-    display: grid;
-    grid-template-areas: 
-        "title"
-        "grid"
-        "btn";
-        align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .grid--title{
-    grid-area: title;
+    order: 0;
+    font-size: 2rem;
+
+}
+
+.grid{
+    order: 1;
 }
 
 .grid-items{
@@ -148,5 +151,7 @@ nav .nav .nav-item{
 }
 
 .grid--btn{
-    grid-area: btn;
+    order: 2;
+    padding: 1em 2em;
+    letter-spacing: .35rem;
 }
