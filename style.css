@@ -197,3 +197,17 @@ nav .nav .nav-item{
 .contact-containner img{
     margin-right: 10px
 }
+
+
+@media (min-width: 400px){
+    body{
+        width: 375px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1440px){
+    body{
+        width: 500px
+    }
+}
