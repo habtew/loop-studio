@@ -206,8 +206,74 @@ nav .nav .nav-item{
     }
 }
 
-@media (min-width: 1440px){
+@media (min-width: 740px){
     body{
-        width: 500px
+        max-width: 1440px;
+        width: 100%;
     }
+
+    header{
+    background: url('./images/mobile/image-hero.jpg') no-repeat;
+    background-size: cover;
+    /* padding: 0em 1em; */
+    background-color: black;
+    background-blend-mode: lighten;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+nav .nav-icon{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    height: 20px;
+    
+}
+
+nav .nav-icon .hamburger-icon{
+    display: none;
+}
+
+nav .logo{
+
+}
+
+nav .nav{
+
+    display: flex;
+    position: unset;
+    height: 70px;
+    flex-direction: row;
+    background: none;
+    color: white;
+    align-items: center;
+}
+
+nav .nav .nav-item{
+    font-size: 1rem;
+    margin-block: 0em;
+    padding-block: 0em;
+    margin: 0 10px;
+}
+
+
+
+.hero{
+    margin-block: 50px;
+    font-size: 40px;
+    padding: .5em;
+    line-height: .8;
+    border: 1px solid white;
+    letter-spacing: .2rem;
+    font-weight: lighter;
+    opacity: .9;
+    max-width: 400px;
+}
+
+
 }
