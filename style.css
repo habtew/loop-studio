@@ -276,4 +276,23 @@ nav .nav .nav-item{
 }
 
 
+/* interactive section */
+.section-interactive{
+    margin: 100px 0px 0px;
+}
+
+.section-interactive-element{
+    text-align: center;
+}
+
+.interactive-title{
+    font-size: 2rem;
+}
+
+.interactive-par{
+ font-size: 1.2rem;
+ line-height: 1.3;   
+}
+
+
 }
