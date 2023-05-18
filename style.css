@@ -301,5 +301,44 @@ nav .nav .nav-item{
  line-height: 1.3;   
 }
 
+/* grid-items section layout */
+.grid-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid--title{
+    order: 0;
+    font-size: 2rem;
+
+}
+
+.grid{
+    order: 1;
+}
+
+.grid-items{
+    position: relative;
+    margin-block: 20px;
+    grid-area: grid;
+}
+
+.grid-items-text{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    bottom: 0;
+    max-width: 40px;
+    font-size: 1.5rem;
+    padding: 0em 1em
+}
+
+.grid--btn{
+    order: 2;
+    padding: 1em 2em;
+    letter-spacing: .35rem;
+}
+
 
 }
