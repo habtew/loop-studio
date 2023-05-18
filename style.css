@@ -279,10 +279,17 @@ nav .nav .nav-item{
 /* interactive section */
 .section-interactive{
     margin: 100px 0px 0px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .section-interactive-element{
-    text-align: center;
+    text-align: left;
+    padding: 2em 4em;
+    height: 300px;
+    width: 550px;
+    margin-left: -130px;
+    background-color: white;
 }
 
 .interactive-title{
