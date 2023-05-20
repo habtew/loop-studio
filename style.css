@@ -2,7 +2,6 @@
 
 *{
     box-sizing: border-box;
-    border: 1px solid green;
 }
 
 body{
@@ -35,6 +34,14 @@ header{
     padding: 2em 1em;
     background-color: black;
     background-blend-mode: lighten;
+}
+
+header .container{
+    /* background: url('./images/mobile/image-hero.jpg') no-repeat;
+    background-size: cover;
+    padding: 2em 1em;
+    background-color: black;
+    background-blend-mode: lighten; */
 }
 
 nav{
@@ -122,17 +129,18 @@ nav .nav .nav-item{
 .grid-section{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .grid--title{
     order: 0;
     font-size: 2rem;
+    grid-area: "title";
 
 }
 
 .grid{
     order: 1;
+    grid-area: "gri";
 }
 
 .grid-items{
@@ -155,6 +163,7 @@ nav .nav .nav-item{
     order: 2;
     padding: 1em 2em;
     letter-spacing: .35rem;
+    grid-area: "btn"
 }
 
 /* footer layout */
@@ -201,14 +210,14 @@ nav .nav .nav-item{
 
 
 @media (min-width: 400px){
-    body{
+    header .container, main, footer{
         width: 375px;
         margin: 0 auto;
     }
 }
 
 @media (min-width: 740px){
-    body{
+    header .container, main, footer{
         max-width: 1440px;
         width: 100%;
     }
@@ -304,21 +313,20 @@ nav .nav .nav-item{
 
 /* grid-items section layout */
 .grid-section{
-    display: grid;
     grid-template-areas: 
         "title btn"
         "gri gri";
 }
 
 .grid--title{
-    grid-area: 'title';
+    order: 0;
     font-size: 2rem;
 
 }
 
 .grid{
-    order: 1;
-    grid-area: 'gri'
+    order: 2;
+    
 }
 
 .grid-items{
@@ -339,7 +347,7 @@ nav .nav .nav-item{
 
 .grid--btn{
     grid-area: 'btn';
-    order: 2;
+    order: 1;
     padding: 1em 2em;
     letter-spacing: .35rem;
 }
