@@ -127,26 +127,23 @@ nav .nav .nav-item{
 
 /* grid-items section layout */
 .grid-section{
-    display: flex;
-    flex-direction: column;
+    display: grid;
 }
 
 .grid--title{
     order: 0;
     font-size: 2rem;
-    grid-area: "title";
 
 }
 
 .grid{
     order: 1;
-    grid-area: "gri";
 }
 
 .grid-items{
     position: relative;
     margin-block: 20px;
-    grid-area: grid;
+    
 }
 
 .grid-items-text{
@@ -163,7 +160,6 @@ nav .nav .nav-item{
     order: 2;
     padding: 1em 2em;
     letter-spacing: .35rem;
-    grid-area: "btn"
 }
 
 /* footer layout */
@@ -313,9 +309,7 @@ nav .nav .nav-item{
 
 /* grid-items section layout */
 .grid-section{
-    grid-template-areas: 
-        "title btn"
-        "gri gri";
+    grid-template-columns: 1fr 1fr;
 }
 
 .grid--title{
@@ -326,6 +320,10 @@ nav .nav .nav-item{
 
 .grid{
     order: 2;
+    margin-right: 100px;
+    grid-column: 1/span 3;
+    display: flex;
+    
     
 }
 
