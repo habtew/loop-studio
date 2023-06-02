@@ -138,6 +138,10 @@ nav .nav .nav-item{
 
 .grid{
     order: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 20px;
 }
 
 .grid-items{
@@ -319,18 +323,18 @@ nav .nav .nav-item{
 }
 
 .grid{
-    order: 2;
-    margin-right: 100px;
+    /* order: 2; */
+    /* margin-right: 100px; */
     grid-column: 1/span 3;
-    display: flex;
+    /* display: flex; */
     
     
 }
 
 .grid-items{
-    position: relative;
-    margin-block: 20px;
-    grid-area: grid;
+    /* position: relative; */
+    /* margin-block: 20px; */
+    /* grid-area: grid; */
 }
 
 .grid-items-text{
