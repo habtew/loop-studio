@@ -2,63 +2,38 @@ const humberIcon = document.querySelector('.hamburger-icon')
 const mobileData = [
     {
         txt: 'Deep earth',
-        img: 'blah blah'
+        img: 'image-deep-earth.jpg'
     },
     {
         txt: 'Night arcade',
-        img: ''
+        img: 'image-night-arcade.jpg'
     },
     {
         txt: 'Soccer team VR',
-        img: ''
+        img: 'image-soccer-team.jpg'
+    },
+    {
+        txt: "The Grid",
+        img: "image-grid.jpg"
     },
     {
         txt: 'From up above VR',
-        img: ''
+        img: 'image-from-above.jpg'
     },
     {
         txt: 'Pocket borealis',
-        img: ''
+        img: 'image-pocket-borealis.jpg'
     },
     {
         txt: 'The curiosity',
-        img: ''
+        img: 'image-curiosity,jpg'
     },
     {
         txt: 'Make it fisheye',
-        img: ''
+        img: 'image-fisheye.jpg'
     },   
 ]
-const desktopData = [
-    {
-        txt: 'Deep earth',
-        img: 'blah blah'
-    },
-    {
-        txt: 'Night arcade',
-        img: ''
-    },
-    {
-        txt: 'Soccer team VR',
-        img: ''
-    },
-    {
-        txt: 'From up above VR',
-        img: ''
-    },
-    {
-        txt: 'Pocket borealis',
-        img: ''
-    },
-    {
-        txt: 'The curiosity',
-        img: ''
-    },
-    {
-        txt: 'Make it fisheye',
-        img: ''
-    },   
-]
+
 
 humberIcon.addEventListener('click', ()=>{
     const elem = document.querySelector('nav .nav')
