@@ -1,4 +1,7 @@
+const grid = document.querySelector('.grid')
 const humberIcon = document.querySelector('.hamburger-icon')
+
+
 const mobileData = [
     {
         txt: 'Deep earth',
@@ -39,3 +42,14 @@ humberIcon.addEventListener('click', ()=>{
     const elem = document.querySelector('nav .nav')
     elem.style.display == 'none'? elem.style.display = 'flex': elem.style.display = 'none'
 })
+
+
+let gridItems = 
+`
+<div class="grid-items">
+    <img class="grid-items-img" src="./images/mobile/image-deep-earth.jpg" alt="deep earth">
+    <h3 class="grid-items-text">DEEP EARTH</h3>
+</div>
+`
+
+console.log(grid)
