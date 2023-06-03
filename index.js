@@ -29,7 +29,7 @@ const mobileData = [
     },
     {
         txt: 'The curiosity',
-        img: 'image-curiosity,jpg'
+        img: 'image-curiosity.jpg'
     },
     {
         txt: 'Make it fisheye',
@@ -44,12 +44,20 @@ humberIcon.addEventListener('click', ()=>{
 })
 
 
-let gridItems = 
-`
+let gridItems = mobileData.map(item => {
+    return `
+    <div class="grid-items">
+        <img class="grid-items-img" src="./images/mobile/${item.img}" alt="deep earth">
+        <h3 class="grid-items-text">${item.txt}</h3>
+    </div>
+    `
+}).join('')
+
+let gridI = `
 <div class="grid-items">
     <img class="grid-items-img" src="./images/mobile/image-deep-earth.jpg" alt="deep earth">
     <h3 class="grid-items-text">DEEP EARTH</h3>
 </div>
 `
 
-console.log(grid)
+grid.innerHTML += gridItems
