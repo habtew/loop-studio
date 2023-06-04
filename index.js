@@ -44,30 +44,31 @@ humberIcon.addEventListener('click', ()=>{
 })
 
 
-let gridItems = mobileData.map(item => {
-    return `
-    <div class="grid-items">
-        <img class="grid-items-img" src="./images/mobile/${item.img}" alt="deep earth">
-        <h3 class="grid-items-text">${item.txt}</h3>
-    </div>
-    `
-}).join('')
+let gridItems = ''
 
-let gridI = `
-<div class="grid-items">
-    <img class="grid-items-img" src="./images/mobile/image-deep-earth.jpg" alt="deep earth">
-    <h3 class="grid-items-text">DEEP EARTH</h3>
-</div>
-`
 
-grid.innerHTML += gridItems
-
-const mql = window.matchMedia('(min-width: 550px)')
+const mql = window.matchMedia('(min-width: 740px)')
 mql.addEventListener('change', (event)=>{
     if(event.matches){
-        console.log('minimum width is 550px')
+        gridItems = mobileData.map(item => {
+            return `
+            <div class="grid-items">
+                <img class="grid-items-img" src="./images/mobile/${item.img}" alt="deep earth">
+                <h3 class="grid-items-text">${item.txt}</h3>
+            </div>
+            `
+        }).join('')
     }
     else{
-        console.log('maximum width 550px')
+        gridItems = mobileData.map(item => {
+            return `
+            <div class="grid-items">
+                <img class="grid-items-img" src="./images/mobile/${item.img}" alt="deep earth">
+                <h3 class="grid-items-text">${item.txt}</h3>
+            </div>
+            `
+        }).join('')
     }
+    grid.innerHTML = gridItems
 })
+
