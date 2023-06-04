@@ -61,3 +61,13 @@ let gridI = `
 `
 
 grid.innerHTML += gridItems
+
+const mql = window.matchMedia('(min-width: 550px)')
+mql.addEventListener('change', (event)=>{
+    if(event.matches){
+        console.log('minimum width is 550px')
+    }
+    else{
+        console.log('maximum width 550px')
+    }
+})
