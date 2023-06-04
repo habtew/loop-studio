@@ -53,7 +53,7 @@ mql.addEventListener('change', (event)=>{
         gridItems = mobileData.map(item => {
             return `
             <div class="grid-items">
-                <img class="grid-items-img" src="./images/mobile/${item.img}" alt="deep earth">
+                <img class="grid-items-img" src="./images/desktop/${item.img}" alt="deep earth">
                 <h3 class="grid-items-text">${item.txt}</h3>
             </div>
             `
