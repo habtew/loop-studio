@@ -167,14 +167,17 @@ nav .nav .nav-item{
 }
 
 /* footer layout */
+footer{
+    background-color: black;
+    color: #ffffff;
+}
 
 .footer{
     display: flex;
     flex-direction: column;
     /* align-self: center; */
-    background-color: black;
-    color: white;
     padding: 2em;
+
 }
 
 
