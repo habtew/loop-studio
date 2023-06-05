@@ -1,6 +1,19 @@
 const grid = document.querySelector('.grid')
-const humberIcon = document.querySelector('.hamburger-icon')
+// const humberIcon = document.querySelector('.hamburger-icon')
 
+
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelectorAll('.nav__link')
+
+navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+});
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+    })
+})
 
 const mobileData = [
     {
@@ -38,10 +51,10 @@ const mobileData = [
 ]
 
 
-humberIcon.addEventListener('click', ()=>{
-    const elem = document.querySelector('nav .nav')
-    elem.style.display == 'none'? elem.style.display = 'flex': elem.style.display = 'none'
-})
+// humberIcon.addEventListener('click', ()=>{
+//     const elem = document.querySelector('nav .nav')
+//     elem.style.display == 'none'? elem.style.display = 'flex': elem.style.display = 'none'
+// })
 
 
 let gridItems = ''
@@ -71,4 +84,3 @@ mql.addEventListener('change', (event)=>{
     }
     grid.innerHTML = gridItems
 })
-
