@@ -401,6 +401,7 @@ nav .nav .nav-item{
     border: 1px solid black;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .nav-container *{
@@ -416,16 +417,14 @@ header{
 }
 
 .nav {
-    position:none;
-    background-color: black;
-    color: white;
+    position:relative;
     
-    transform:none;
-    transition: none;
-    border: 1px solid red
 }
 
 .nav__list {
+    position: absolute;
+    top: 0;
+    right: 0;
     list-style: none;
     display: flex;
     height: 100%;
